@@ -439,7 +439,7 @@ iframe {
  * Remove margin from the last-child
  */
 .uk-grid > * > :last-child {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 /* Grid gutter
  ========================================================================== */
