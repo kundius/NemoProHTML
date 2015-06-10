@@ -13,93 +13,133 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="toolbar">
-                <div class="uk-container uk-container-center">
-                    <div class="toolbar-auth uk-float-left">
-                        <a class="toolbar-auth__login" href="#">
-                            <img src="img/icon-arr.png" alt="">
-                            Войти
-                        </a>
-                        <a class="toolbar-auth__reg" href="#">Регистрация</a>
+        <div class="" id="slideout-menu">
+            <div class="slideout-menu__close js-slideout-toggle"></div>
+            <ul>
+                <li class="slideout-menu__lvl1">
+                    <div class="_toggle js-left-menu-toggle">
+                        <i class="uk-icon-angle-down"></i>
                     </div>
-                    <div class="mini-cart uk-float-right">
-                        <a class="mini-cart__ico" href="#"></a>
-                        <div class="mini-cart__info">
-                            <div class="mini-cart__lbl">Товаров:</div>
-                            <div class="mini-cart__val">125</div>
-                        </div>
-                        <div class="mini-cart__info">
-                            <div class="mini-cart__lbl">На сумму:</div>
-                            <div class="mini-cart__val">125 000 руб.</div>
-                        </div>
-                    </div>
-                    <div class="toolbar-search">
-                        <div class="toolbar-search__form">
-                            <form action="#">
-                                <input type="text" name="query" class="toolbar-search__input" placeholder="Поиск по каталогу">
-                                <button type="submit" class="toolbar-search__btn"></button>
-                            </form>
-                        </div>
-                        <a href="#" class="toolbar-search__link"><img src="img/icon-search-white.png" alt="">Поиск</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="header">
-                <div class="uk-container uk-container-center">
-                    <div class="header-logo uk-float-left">
-                        <a href="/"><img src="img/logo.png" alt="" class="header-logo__image"></a>
-                        <div class="header-logo__text">Интернет-магазин <span>подводного снаряжения</span></div>
-                    </div>
-
-                    <div class="header-cats">
-                        <div class="uk-grid uk-grid-small">
-                            <div class="uk-width-1-3 uk-width-medium-1-6">
-                                <a href="#" class="header-cat idx1">
-                                    <span class="_uppercase">Главная</span>
-                                </a>
+                    <a href="">Маски, трубки, очки <span>Шапочки, беруши и зажимы</span></a>
+                    <ul>
+                        <li class="slideout-menu__lvl2"><a href="">Маски для плавания</a></li>
+                        <li class="slideout-menu__lvl2">
+                            <div class="_toggle js-left-menu-toggle">
+                                <i class="uk-icon-angle-down"></i>
                             </div>
-                            <div class="uk-width-1-3 uk-width-medium-1-6">
-                                <a href="#" class="header-cat idx2">
-                                    <span>Подобрать<br> снаряжение</span>
-                                </a>
-                            </div>
-                            <div class="uk-width-1-3 uk-width-medium-1-6">
-                                <a href="#" class="header-cat idx3">
-                                    <span>Туры и<br> мероприятия</span>
-                                </a>
-                            </div>
-                            <div class="uk-width-1-3 uk-width-medium-1-6">
-                                <a href="#" class="header-cat idx4">
-                                    <span>Фото<br> и видео</span>
-                                </a>
-                            </div>
-                            <div class="uk-width-1-3 uk-width-medium-1-6">
-                                <a href="#" class="header-cat idx5">
-                                    <span class="_uppercase">Контакты</span>
-                                </a>
-                            </div>
-                            <div class="uk-width-1-3 uk-width-medium-1-6">
-                                <a href="#" class="header-cat idx6">
-                                    <span class="_uppercase">Форум</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="catalog-menu">
-                <div class="uk-container uk-container-center">
-                    <div class="catalog-menu__slide" data-uk-toggle="{target:'#catalog-menu-wrap', animation:'uk-animation-slide-top, uk-animation-slide-top'}">
+                            <a href="">Трубки для плавания</a>
+                            <ul>
+                                <li class="slideout-menu__lvl3"><a href="">Трубки для охоты <span>(клапаны и сетки к ним)</span></a></li>
+                                <li class="slideout-menu__lvl3"><a href="">Трубки для дайвинга и пляжа</a></li>
+                                <li class="slideout-menu__lvl3"><a href="">Трубки детские</a></li>
+                                <li class="slideout-menu__lvl3"><a href="">Аксессуары к трубкам</a></li>
+                            </ul>
+                        </li>
+                        <li class="slideout-menu__lvl2"><a href="">Очки и шапочки для плавания</a></li>
+                        <li class="slideout-menu__lvl2"><a href="">Наборы Маска+трубка</a></li>
+                        <li class="slideout-menu__lvl2"><a href="">Беруши и зажимы для носа</a></li>
+                    </ul>
+                </li>
+                <li class="slideout-menu__lvl1">
+                    <a href="">Ласты для плавания <span>Аксессуары и наборы</span></a>
+                </li>
+                <li class="slideout-menu__lvl1">
+                    <a href="">Гидрокостюмы <span>Майки, шорты и шлема</span></a>
+                </li>
+                <li class="slideout-menu__lvl1">
+                    <a href="">Носки, перчатки, боты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper" id="slideout-panel">
+            <div class="wrapper__bg">
+                <div class="slideout-menu__toggle js-slideout-toggle">
+                    <span>
                         <i class="uk-icon-bars"></i>
                         Разделы каталога<br> товаров
+                    </span>
+                </div>
+                <div class="toolbar">
+                    <div class="uk-container uk-container-center">
+                        <div class="toolbar-auth uk-float-left">
+                            <a class="toolbar-auth__login" href="#">
+                                <img src="img/icon-arr.png" alt="">
+                                Войти
+                            </a>
+                            <a class="toolbar-auth__reg" href="#">Регистрация</a>
+                        </div>
+                        <div class="mini-cart uk-float-right">
+                            <a class="mini-cart__ico" href="#"></a>
+                            <div class="mini-cart__info">
+                                <div class="mini-cart__lbl">Товаров:</div>
+                                <div class="mini-cart__val">125</div>
+                            </div>
+                            <div class="mini-cart__info">
+                                <div class="mini-cart__lbl">На сумму:</div>
+                                <div class="mini-cart__val">125 000 руб.</div>
+                            </div>
+                        </div>
+                        <div class="toolbar-search">
+                            <div class="toolbar-search__form">
+                                <form action="#">
+                                    <input type="text" name="query" class="toolbar-search__input" placeholder="Поиск по каталогу">
+                                    <button type="submit" class="toolbar-search__btn"></button>
+                                </form>
+                            </div>
+                            <a href="#" class="toolbar-search__link"><img src="img/icon-search-white.png" alt="">Поиск</a>
+                        </div>
                     </div>
-                    <div class="catalog-menu__wrap uk-hidden" id="catalog-menu-wrap">
-                        <ul class="catalog-menu__main">
+                </div>
+
+                <div class="header">
+                    <div class="uk-container uk-container-center">
+                        <div class="header-logo uk-float-left">
+                            <a href="/"><img src="img/logo.png" alt="" class="header-logo__image"></a>
+                            <div class="header-logo__text">Интернет-магазин <span>подводного снаряжения</span></div>
+                        </div>
+
+                        <div class="header-cats">
+                            <div class="uk-grid uk-grid-small">
+                                <div class="uk-width-1-3 uk-width-medium-1-6">
+                                    <a href="#" class="header-cat idx1">
+                                        <span class="_uppercase">Главная</span>
+                                    </a>
+                                </div>
+                                <div class="uk-width-1-3 uk-width-medium-1-6">
+                                    <a href="#" class="header-cat idx2">
+                                        <span>Подобрать<br> снаряжение</span>
+                                    </a>
+                                </div>
+                                <div class="uk-width-1-3 uk-width-medium-1-6">
+                                    <a href="#" class="header-cat idx3">
+                                        <span>Туры и<br> мероприятия</span>
+                                    </a>
+                                </div>
+                                <div class="uk-width-1-3 uk-width-medium-1-6">
+                                    <a href="#" class="header-cat idx4">
+                                        <span>Фото<br> и видео</span>
+                                    </a>
+                                </div>
+                                <div class="uk-width-1-3 uk-width-medium-1-6">
+                                    <a href="#" class="header-cat idx5">
+                                        <span class="_uppercase">Контакты</span>
+                                    </a>
+                                </div>
+                                <div class="uk-width-1-3 uk-width-medium-1-6">
+                                    <a href="#" class="header-cat idx6">
+                                        <span class="_uppercase">Форум</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-menu">
+                    <div class="uk-container uk-container-center">
+                        <ul class="catalog-menu__main uk-hidden" id="catalog-menu">
                             <li class="parent js-catalog-menu-lvl1">
-                                <a href="#">Комплекты для&nbsp;охоты</a>
+                                <a href="#"><span>Комплекты</span> для охоты</a>
                                 <div class="c-m-inner js-c-m-inner">
                                     <div class="uk-container uk-container-center">
                                         <div class="c-m-inner__wrap">
@@ -107,7 +147,7 @@
                                                 <div class="uk-width-1-1 uk-width-medium-1-3 catalog-menu-left js-catalog-menu-left">
                                                     <div class="c-m-inner__outer js-catalog-menu-outer">
                                                         <div class="c-m-inner__head">
-                                                            Комплекты для&nbsp;охоты
+                                                            <span>Комплекты</span> <span>для охоты</span>
                                                         </div>
                                                         <ul class="c-m-inner__list">
                                                             <li class="parent js-catalog-menu-lvl2">
@@ -257,13 +297,25 @@
                                 </div>
                             </li>
                             <li class="parent js-catalog-menu-lvl1">
-                                <a href="#">Майки, шорты</a>
+                                <a href="#"><span>Майки,</span> шорты</a>
                             </li>
                             <li class="parent js-catalog-menu-lvl1">
-                                <a href="#">Подводные ружья</a>
+                                <a href="#"><span>Подводные</span> ружья</a>
                             </li>
                             <li class="parent js-catalog-menu-lvl1">
-                                <a href="#">Носки к гидрокостюмам</a>
+                                <a href="#"><span>Носки к</span> гидрокостюмам</a>
+                            </li>
+                            <li class="js-catalog-menu-lvl1">
+                                <a href="#">Перчатки</a>
+                            </li>
+                            <li class="parent js-catalog-menu-lvl1">
+                                <a href="#"><span>Майки,</span> шорты</a>
+                            </li>
+                            <li class="parent js-catalog-menu-lvl1">
+                                <a href="#"><span>Подводные</span> ружья</a>
+                            </li>
+                            <li class="parent js-catalog-menu-lvl1">
+                                <a href="#"><span>Носки к</span> гидрокостюмам</a>
                             </li>
                             <li class="js-catalog-menu-lvl1">
                                 <a href="#">Перчатки</a>
@@ -271,378 +323,378 @@
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="uk-container uk-container-center">
-                <div class="slider">
-                    <ul class="js-slider">
-                        <li class="slider-item">
-                            <img src="img/slide-1.jpg" class="slider__image">
-                            <div class="slider__info">
-                                <div class="slider__title">Спортивные часы для погружений Suuntu D4</div>
-                                <div class="slider__more">
-                                    <a class="uk-button uk-button-large" href="#">Подробнее <i class="uk-icon-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="slider-item">
-                            <img src="img/slide-1.jpg" class="slider__image">
-                            <div class="slider__info">
-                                <div class="slider__title">Спортивные часы для погружений Suuntu D4</div>
-                                <div class="slider__more">
-                                    <a class="uk-button uk-button-large" href="#">Подробнее <i class="uk-icon-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="uk-container uk-container-center">
-                <div class="h-offers__head">
-                    <div class="h-offers-title">
-                        Интересные предложения:
-                    </div>
-                    <div class="h-offers-switcher" data-uk-switcher="{connect:'#h-offers'}">
-                        <span><span>Все</span></span>
-                        <span><span>Новинки</span></span>
-                        <span><span>Хиты</span></span>
-                    </div>
-                </div>
-                <div id="h-offers" class="uk-switcher">
-                    <div class="h-offers-list">
-                        <div class="uk-grid uk-grid-small">
-                            <div class="h-offers-cell uk-width-small-1-2 uk-width-medium-1-3">
-                                <div class="h-offer">
-                                    <div class="h-offer__new"><span>NEW</span></div>
-                                    <a class="h-offer__image" href="#">
-                                        <img src="img/offer-1.png" alt="">
-                                    </a>
-                                    <div class="h-offer__info">
-                                        <a href="#" class="h-offer__name">C4 Skorpio Marathon</a>
-                                        <div class="h-offer__vendor">
-                                            Производители 	C4
-                                        </div>
-                                        <div class="h-offer__price">
-                                            123 546 руб.
-                                        </div>
-                                        <button type="submit" class="h-offer__add uk-button uk-button-large">
-                                            <img src="img/icon-cart-h.png" alt="">
-                                            Купить
-                                        </button>
-                                        <a href="#" class="h-offer__more">Подробнее ></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-offers-cell uk-width-small-1-2 uk-width-medium-1-3">
-                                <div class="h-offer">
-                                    <a class="h-offer__image" href="#">
-                                        <img src="img/offer-1.png" alt="">
-                                    </a>
-                                    <div class="h-offer__info">
-                                        <a href="#" class="h-offer__name">C4 Skorpio Marathon</a>
-                                        <div class="h-offer__vendor">
-                                            Производители 	C4
-                                        </div>
-                                        <div class="h-offer__price">
-                                            123 546 руб.
-                                        </div>
-                                        <button type="submit" class="h-offer__add uk-button uk-button-large">
-                                            <img src="img/icon-cart-h.png" alt="">
-                                            Купить
-                                        </button>
-                                        <a href="#" class="h-offer__more">Подробнее ></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-offers-cell uk-width-small-1-2 uk-width-medium-1-3">
-                                <div class="h-offer">
-                                    <a class="h-offer__image" href="#">
-                                        <img src="img/offer-1.png" alt="">
-                                    </a>
-                                    <div class="h-offer__info">
-                                        <a href="#" class="h-offer__name">C4 Skorpio Marathon</a>
-                                        <div class="h-offer__vendor">
-                                            Производители 	C4
-                                        </div>
-                                        <div class="h-offer__price">
-                                            123 546 руб.
-                                        </div>
-                                        <button type="submit" class="h-offer__add uk-button uk-button-large">
-                                            <img src="img/icon-cart-h.png" alt="">
-                                            Купить
-                                        </button>
-                                        <a href="#" class="h-offer__more">Подробнее ></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="h-offers-list">
-                        Новинки
-                    </div>
-                    <div class="h-offers-list">
-                        Хиты
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-container uk-container-center js-equal-list h-about__wrap">
-                <div class="uk-grid uk-grid-small">
-                    <div class="uk-width-medium-1-2">
-                        <div class="h-about js-equal-item">
-                            <div class="h-about__time">
-                                Более
-                                <div class="_big"><span class="_num">5</span>-ти лет</div>
-                                <div class="_small">на Российском рынке</div>
-                            </div>
-                            <div class="h-about__title">О нас</div>
-                            <div class="h-about__desc">Магазин "Капитан-Немо" - это снаряжение для подводной охоты, дайвинга и пляжа...</div>
-                            <div class="h-about__more"><a href="#">Подробнее ></a></div>
-                        </div>
-                    </div>
-                    <div class="uk-width-medium-1-2">
-                        <div class="about-slider js-equal-item">
-                            <ul class="js-about-slider">
-                                <li>
-                                    <img src="img/about-1.jpg" alt="" class="about-slider__image">
-                                </li>
-                                <li>
-                                    <img src="img/about-1.jpg" alt="" class="about-slider__image">
-                                </li>
-                                <li>
-                                    <img src="img/about-1.jpg" alt="" class="about-slider__image">
-                                </li>
-                                <li>
-                                    <img src="img/about-1.jpg" alt="" class="about-slider__image">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-container uk-container-center">
-                <div class="white-container">
-                    <div class="why-we">
-                        <div class="why-we__title">ПОЧЕМУ 95% КЛИЕНТОВ<br> ПРИНИМАЮТ РЕШЕНИЕ ПОКУПАТЬ У НАС</div>
-                        <div class="why-we__table">
-                            <div class="uk-grid">
-                                <div class="uk-width-small-1-2 uk-width-medium-1-3">
-                                    <div class="why-we-item">
-                                        <img class="why-we-item__icon" src="img/features-icon/1.png" alt="">
-                                        <div class="why-we-item__title">Короткие сроки поставок</div>
-                                        <div class="why-we-item__text">
-                                            По Москве - сразу в день заказа!<br> По регионам - до 2-х недель!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-3">
-                                    <div class="why-we-item">
-                                        <img class="why-we-item__icon" src="img/features-icon/2.png" alt="">
-                                        <div class="why-we-item__title">Срок службы более 2 лет</div>
-                                        <div class="why-we-item__text">
-                                            Гарантируем, приобретённая у нас продукция прослужит более 2-х лет!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-3">
-                                    <div class="why-we-item">
-                                        <img class="why-we-item__icon" src="img/features-icon/3.png" alt="">
-                                        <div class="why-we-item__title">Огромный ассортимент</div>
-                                        <div class="why-we-item__text">
-                                            Наш ассортимент - это несколько лет подбора товаров по критерию: цена/качество!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-3">
-                                    <div class="why-we-item">
-                                        <img class="why-we-item__icon" src="img/features-icon/4.png" alt="">
-                                        <div class="why-we-item__title">Приём заказов</div>
-                                        <div class="why-we-item__text">
-                                            Подводное снаряжение купить можно <strong>круглосуточно</strong> в режиме online в нашем интернет-магазине!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-3">
-                                    <div class="why-we-item">
-                                        <img class="why-we-item__icon" src="img/features-icon/5.png" alt="">
-                                        <div class="why-we-item__title">Квалифицированные сотрудники</div>
-                                        <div class="why-we-item__text">
-                                            Вежливые и профессиональные сотрудники нашего интернет –магазина подводного снаряжения с радостью ответят на любой Ваш вопрос<br> по телефону:  <strong>8 (555) 123-00-00</strong>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-3">
-                                    <div class="why-we-item">
-                                        <img class="why-we-item__icon" src="img/features-icon/6.png" alt="">
-                                        <div class="why-we-item__title">100% гарантия</div>
-                                        <div class="why-we-item__text">
-                                            Мы гарантируем что покупая в нашем интернет-магазине Вы приобретаете  только оригинальную и сертифицированную продукцию!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /why-we -->
-
-                    <div class="workflow">
-                        <div class="workflow__title">Процесс нашей работы</div>
-                        <div class="workflow__items">
-                            <div class="uk-grid">
-                                <div class="uk-width-small-1-2 uk-width-medium-1-4">
-                                    <div class="workflow-item">
-                                        <div class="workflow-item__num">1.</div>
-                                        <div class="workflow-item__name"><span>ПРИЕМ</span><span>ЗАКАЗА</span></div>
-                                        <div class="workflow-item__desc">Вы подаете нам заявку через сайт, либо по телефону</div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-4">
-                                    <div class="workflow-item">
-                                        <div class="workflow-item__num">2.</div>
-                                        <div class="workflow-item__name"><span>УТОЧНЕНИЕ</span><span>ЗАКАЗА</span></div>
-                                        <div class="workflow-item__desc">Через некоторое время с Вами свяжутся для подтверждения заказа</div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-4">
-                                    <div class="workflow-item">
-                                        <div class="workflow-item__num">3.</div>
-                                        <div class="workflow-item__name"><span>ПЕРЕДАЧА</span><span>ЗАКАЗА</span></div>
-                                        <div class="workflow-item__desc">Мы передаем выбранный Вами товар курьерской службе</div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-small-1-2 uk-width-medium-1-4">
-                                    <div class="workflow-item">
-                                        <div class="workflow-item__num">4.</div>
-                                        <div class="workflow-item__name"><span>ОКОНЧАНИЕ</span><span>РАБОТЫ</span></div>
-                                        <div class="workflow-item__desc">Вы получаете Ваш долгожданный товар</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /workflow -->
-
-                    <div class="h-reviews">
-                        <div class="h-reviews__title">
-                            <a class="h-reviews__all uk-float-right" href="#">смотреть все отзывы</a>
-                            Отзывы
-                        </div>
-                        <div class="h-reviews__items">
-                            <div class="uk-grid">
-                                <div class="uk-width-medium-1-3">
-                                    <div class="h-review">
-                                        <div class="h-review__image">
-                                            <img src="img/avatar.jpg" alt="">
-                                        </div>
-                                        <div class="h-review__info">
-                                            <div class="h-review__name">Николай Басков</div>
-                                            <div class="h-review__address">Санкт Петербург</div>
-                                            <div class="h-review__links">
-                                                <a class="h-review__vk" href="#"></a>
-                                            </div>
-                                        </div>
-                                        <div class="h-review__desc">
-                                            <i class="uk-icon-quote-left h-review__quote"></i>
-                                            Заказываем здесь с подругой маски для ныряния :) и всё это время окружающие в восторге от того как мы ныряем..
-                                        </div>
-                                        <div class="h-review__more"><a href="#">Подробнее ></a></div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-medium-1-3">
-                                    <div class="h-review">
-                                        <div class="h-review__image">
-                                            <img src="img/avatar.jpg" alt="">
-                                        </div>
-                                        <div class="h-review__info">
-                                            <div class="h-review__name">Николай Басков</div>
-                                            <div class="h-review__address">Санкт Петербург</div>
-                                            <div class="h-review__links">
-                                                <a class="h-review__vk" href="#"></a>
-                                            </div>
-                                        </div>
-                                        <div class="h-review__desc">
-                                            <i class="uk-icon-quote-left h-review__quote"></i>
-                                            Заказываем здесь с подругой маски для ныряния :) и всё это время окружающие в восторге от того как мы ныряем..
-                                        </div>
-                                        <div class="h-review__more"><a href="#">Подробнее ></a></div>
-                                    </div>
-                                </div>
-                                <div class="uk-width-medium-1-3">
-                                    <div class="h-review">
-                                        <div class="h-review__image">
-                                            <img src="img/avatar.jpg" alt="">
-                                        </div>
-                                        <div class="h-review__info">
-                                            <div class="h-review__name">Николай Басков</div>
-                                            <div class="h-review__address">Санкт Петербург</div>
-                                            <div class="h-review__links">
-                                                <a class="h-review__vk" href="#"></a>
-                                            </div>
-                                        </div>
-                                        <div class="h-review__desc">
-                                            <i class="uk-icon-quote-left h-review__quote"></i>
-                                            Заказываем здесь с подругой маски для ныряния :) и всё это время окружающие в восторге от того как мы ныряем..
-                                        </div>
-                                        <div class="h-review__more"><a href="#">Подробнее ></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /reviews -->
-
-                    <hr>
-
-                    <div class="uk-grid">
-                        <div class="uk-width-medium-1-2">
-                            <div class="h-text-block">
-                                <div class="h-text-block__title">Способ оплаты</div>
-                                <div class="h-text-block__desc">Наличный и безналичный расчет</div>
-                                <div class="h-payments">
-                                    <img src="img/payments/1.png" alt="">
-                                    <img src="img/payments/2.png" alt="">
-                                    <img src="img/payments/3.png" alt="">
-                                    <img src="img/payments/4.png" alt="">
-                                    <img src="img/payments/5.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uk-width-medium-1-2">
-                            <div class="h-text-block">
-                                <div class="h-text-block__title">Способ оплаты</div>
-                                <div class="h-text-block__desc">Наличный и безналичный расчет</div>
-                                <div class="h-feedback">
-                                    <form action="#" method="post">
-                                        <input type="text" name="query" placeholder="Введите ваш e-mail">
-                                        <button type="submit" class="button-blue-round"><img src="img/icon-arr.png" alt=""></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer">
                 <div class="uk-container uk-container-center">
-                    <div class="footer__text">
-                        <div class="footer__copyright">© 2015, <b>NEMO.PRO.</b> Все права защищены.</div>
-                        <div class="footer__socials">
-                            Мы в соцсетях:
-                            <a class="_vk" href="#"></a>
+                    <div class="slider">
+                        <ul class="js-slider">
+                            <li class="slider-item">
+                                <img src="img/slide-1.jpg" class="slider__image">
+                                <div class="slider__info">
+                                    <div class="slider__title">Спортивные часы для погружений Suuntu D4</div>
+                                    <div class="slider__more">
+                                        <a class="uk-button uk-button-large" href="#">Подробнее <i class="uk-icon-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider-item">
+                                <img src="img/slide-1.jpg" class="slider__image">
+                                <div class="slider__info">
+                                    <div class="slider__title">Спортивные часы для погружений Suuntu D4</div>
+                                    <div class="slider__more">
+                                        <a class="uk-button uk-button-large" href="#">Подробнее <i class="uk-icon-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="uk-container uk-container-center">
+                    <div class="h-offers__head">
+                        <div class="h-offers-title">
+                            Интересные предложения:
+                        </div>
+                        <div class="h-offers-switcher" data-uk-switcher="{connect:'#h-offers'}">
+                            <span><span>Все</span></span>
+                            <span><span>Новинки</span></span>
+                            <span><span>Хиты</span></span>
                         </div>
                     </div>
-                    <div class="footer__info">
-                        <div class="footer__map">
-                            <a href="#">Карта сайта</a>
+                    <div id="h-offers" class="uk-switcher">
+                        <div class="h-offers-list">
+                            <div class="uk-grid uk-grid-small">
+                                <div class="h-offers-cell uk-width-small-1-2 uk-width-medium-1-3">
+                                    <div class="h-offer">
+                                        <div class="h-offer__new"><span>NEW</span></div>
+                                        <a class="h-offer__image" href="#">
+                                            <img src="img/offer-1.png" alt="">
+                                        </a>
+                                        <div class="h-offer__info">
+                                            <a href="#" class="h-offer__name">C4 Skorpio Marathon</a>
+                                            <div class="h-offer__vendor">
+                                                Производители 	C4
+                                            </div>
+                                            <div class="h-offer__price">
+                                                123 546 руб.
+                                            </div>
+                                            <button type="submit" class="h-offer__add uk-button uk-button-large">
+                                                <img src="img/icon-cart-h.png" alt="">
+                                                Купить
+                                            </button>
+                                            <a href="#" class="h-offer__more">Подробнее ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h-offers-cell uk-width-small-1-2 uk-width-medium-1-3">
+                                    <div class="h-offer">
+                                        <a class="h-offer__image" href="#">
+                                            <img src="img/offer-1.png" alt="">
+                                        </a>
+                                        <div class="h-offer__info">
+                                            <a href="#" class="h-offer__name">C4 Skorpio Marathon</a>
+                                            <div class="h-offer__vendor">
+                                                Производители 	C4
+                                            </div>
+                                            <div class="h-offer__price">
+                                                123 546 руб.
+                                            </div>
+                                            <button type="submit" class="h-offer__add uk-button uk-button-large">
+                                                <img src="img/icon-cart-h.png" alt="">
+                                                Купить
+                                            </button>
+                                            <a href="#" class="h-offer__more">Подробнее ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="h-offers-cell uk-width-small-1-2 uk-width-medium-1-3">
+                                    <div class="h-offer">
+                                        <a class="h-offer__image" href="#">
+                                            <img src="img/offer-1.png" alt="">
+                                        </a>
+                                        <div class="h-offer__info">
+                                            <a href="#" class="h-offer__name">C4 Skorpio Marathon</a>
+                                            <div class="h-offer__vendor">
+                                                Производители 	C4
+                                            </div>
+                                            <div class="h-offer__price">
+                                                123 546 руб.
+                                            </div>
+                                            <button type="submit" class="h-offer__add uk-button uk-button-large">
+                                                <img src="img/icon-cart-h.png" alt="">
+                                                Купить
+                                            </button>
+                                            <a href="#" class="h-offer__more">Подробнее ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="footer__counter">
-                            <img src="img/counter.png" alt="">
+                        <div class="h-offers-list">
+                            Новинки
                         </div>
-                        <div class="footer__creator">
-                            <a href="http://domenart-studio.ru" target="_blank">
-                                Разработска сайта<br>
-                                <img src="img/creator.png" alt="">
-                            </a>
+                        <div class="h-offers-list">
+                            Хиты
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-container uk-container-center js-equal-list h-about__wrap">
+                    <div class="uk-grid uk-grid-small">
+                        <div class="uk-width-medium-1-2">
+                            <div class="h-about js-equal-item">
+                                <div class="h-about__time">
+                                    Более
+                                    <div class="_big"><span class="_num">5</span>-ти лет</div>
+                                    <div class="_small">на Российском рынке</div>
+                                </div>
+                                <div class="h-about__title">О нас</div>
+                                <div class="h-about__desc">Магазин "Капитан-Немо" - это снаряжение для подводной охоты, дайвинга и пляжа...</div>
+                                <div class="h-about__more"><a href="#">Подробнее ></a></div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-2">
+                            <div class="about-slider js-equal-item">
+                                <ul class="js-about-slider">
+                                    <li>
+                                        <img src="img/about-1.jpg" alt="" class="about-slider__image">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-1.jpg" alt="" class="about-slider__image">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-1.jpg" alt="" class="about-slider__image">
+                                    </li>
+                                    <li>
+                                        <img src="img/about-1.jpg" alt="" class="about-slider__image">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-container uk-container-center">
+                    <div class="white-container">
+                        <div class="why-we">
+                            <div class="why-we__title">ПОЧЕМУ 95% КЛИЕНТОВ<br> ПРИНИМАЮТ РЕШЕНИЕ ПОКУПАТЬ У НАС</div>
+                            <div class="why-we__table">
+                                <div class="uk-grid">
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                                        <div class="why-we-item">
+                                            <img class="why-we-item__icon" src="img/features-icon/1.png" alt="">
+                                            <div class="why-we-item__title">Короткие сроки поставок</div>
+                                            <div class="why-we-item__text">
+                                                По Москве - сразу в день заказа!<br> По регионам - до 2-х недель!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                                        <div class="why-we-item">
+                                            <img class="why-we-item__icon" src="img/features-icon/2.png" alt="">
+                                            <div class="why-we-item__title">Срок службы более 2 лет</div>
+                                            <div class="why-we-item__text">
+                                                Гарантируем, приобретённая у нас продукция прослужит более 2-х лет!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                                        <div class="why-we-item">
+                                            <img class="why-we-item__icon" src="img/features-icon/3.png" alt="">
+                                            <div class="why-we-item__title">Огромный ассортимент</div>
+                                            <div class="why-we-item__text">
+                                                Наш ассортимент - это несколько лет подбора товаров по критерию: цена/качество!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                                        <div class="why-we-item">
+                                            <img class="why-we-item__icon" src="img/features-icon/4.png" alt="">
+                                            <div class="why-we-item__title">Приём заказов</div>
+                                            <div class="why-we-item__text">
+                                                Подводное снаряжение купить можно <strong>круглосуточно</strong> в режиме online в нашем интернет-магазине!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                                        <div class="why-we-item">
+                                            <img class="why-we-item__icon" src="img/features-icon/5.png" alt="">
+                                            <div class="why-we-item__title">Квалифицированные сотрудники</div>
+                                            <div class="why-we-item__text">
+                                                Вежливые и профессиональные сотрудники нашего интернет –магазина подводного снаряжения с радостью ответят на любой Ваш вопрос<br> по телефону:  <strong>8 (555) 123-00-00</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+                                        <div class="why-we-item">
+                                            <img class="why-we-item__icon" src="img/features-icon/6.png" alt="">
+                                            <div class="why-we-item__title">100% гарантия</div>
+                                            <div class="why-we-item__text">
+                                                Мы гарантируем что покупая в нашем интернет-магазине Вы приобретаете  только оригинальную и сертифицированную продукцию!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /why-we -->
+
+                        <div class="workflow">
+                            <div class="workflow__title">Процесс нашей работы</div>
+                            <div class="workflow__items">
+                                <div class="uk-grid">
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-4">
+                                        <div class="workflow-item">
+                                            <div class="workflow-item__num">1.</div>
+                                            <div class="workflow-item__name"><span>ПРИЕМ</span><span>ЗАКАЗА</span></div>
+                                            <div class="workflow-item__desc">Вы подаете нам заявку через сайт, либо по телефону</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-4">
+                                        <div class="workflow-item">
+                                            <div class="workflow-item__num">2.</div>
+                                            <div class="workflow-item__name"><span>УТОЧНЕНИЕ</span><span>ЗАКАЗА</span></div>
+                                            <div class="workflow-item__desc">Через некоторое время с Вами свяжутся для подтверждения заказа</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-4">
+                                        <div class="workflow-item">
+                                            <div class="workflow-item__num">3.</div>
+                                            <div class="workflow-item__name"><span>ПЕРЕДАЧА</span><span>ЗАКАЗА</span></div>
+                                            <div class="workflow-item__desc">Мы передаем выбранный Вами товар курьерской службе</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-small-1-2 uk-width-medium-1-4">
+                                        <div class="workflow-item">
+                                            <div class="workflow-item__num">4.</div>
+                                            <div class="workflow-item__name"><span>ОКОНЧАНИЕ</span><span>РАБОТЫ</span></div>
+                                            <div class="workflow-item__desc">Вы получаете Ваш долгожданный товар</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /workflow -->
+
+                        <div class="h-reviews">
+                            <div class="h-reviews__title">
+                                <a class="h-reviews__all uk-float-right" href="#">смотреть все отзывы</a>
+                                Отзывы
+                            </div>
+                            <div class="h-reviews__items">
+                                <div class="uk-grid">
+                                    <div class="uk-width-medium-1-3">
+                                        <div class="h-review">
+                                            <div class="h-review__image">
+                                                <img src="img/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="h-review__info">
+                                                <div class="h-review__name">Николай Басков</div>
+                                                <div class="h-review__address">Санкт Петербург</div>
+                                                <div class="h-review__links">
+                                                    <a class="h-review__vk" href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="h-review__desc">
+                                                <i class="uk-icon-quote-left h-review__quote"></i>
+                                                Заказываем здесь с подругой маски для ныряния :) и всё это время окружающие в восторге от того как мы ныряем..
+                                            </div>
+                                            <div class="h-review__more"><a href="#">Подробнее ></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-medium-1-3">
+                                        <div class="h-review">
+                                            <div class="h-review__image">
+                                                <img src="img/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="h-review__info">
+                                                <div class="h-review__name">Николай Басков</div>
+                                                <div class="h-review__address">Санкт Петербург</div>
+                                                <div class="h-review__links">
+                                                    <a class="h-review__vk" href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="h-review__desc">
+                                                <i class="uk-icon-quote-left h-review__quote"></i>
+                                                Заказываем здесь с подругой маски для ныряния :) и всё это время окружающие в восторге от того как мы ныряем..
+                                            </div>
+                                            <div class="h-review__more"><a href="#">Подробнее ></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-medium-1-3">
+                                        <div class="h-review">
+                                            <div class="h-review__image">
+                                                <img src="img/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="h-review__info">
+                                                <div class="h-review__name">Николай Басков</div>
+                                                <div class="h-review__address">Санкт Петербург</div>
+                                                <div class="h-review__links">
+                                                    <a class="h-review__vk" href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="h-review__desc">
+                                                <i class="uk-icon-quote-left h-review__quote"></i>
+                                                Заказываем здесь с подругой маски для ныряния :) и всё это время окружающие в восторге от того как мы ныряем..
+                                            </div>
+                                            <div class="h-review__more"><a href="#">Подробнее ></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /reviews -->
+
+                        <hr>
+
+                        <div class="uk-grid">
+                            <div class="uk-width-medium-1-2">
+                                <div class="h-text-block">
+                                    <div class="h-text-block__title">Способ оплаты</div>
+                                    <div class="h-text-block__desc">Наличный и безналичный расчет</div>
+                                    <div class="h-payments">
+                                        <img src="img/payments/1.png" alt="">
+                                        <img src="img/payments/2.png" alt="">
+                                        <img src="img/payments/3.png" alt="">
+                                        <img src="img/payments/4.png" alt="">
+                                        <img src="img/payments/5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2">
+                                <div class="h-text-block">
+                                    <div class="h-text-block__title">Способ оплаты</div>
+                                    <div class="h-text-block__desc">Наличный и безналичный расчет</div>
+                                    <div class="h-feedback">
+                                        <form action="#" method="post">
+                                            <input type="text" name="query" placeholder="Введите ваш e-mail">
+                                            <button type="submit" class="button-blue-round"><img src="img/icon-arr.png" alt=""></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="uk-container uk-container-center">
+                        <div class="footer__text">
+                            <div class="footer__copyright">© 2015, <b>NEMO.PRO.</b> Все права защищены.</div>
+                            <div class="footer__socials">
+                                Мы в соцсетях:
+                                <a class="_vk" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__map">
+                                <a href="#">Карта сайта</a>
+                            </div>
+                            <div class="footer__counter">
+                                <img src="img/counter.png" alt="">
+                            </div>
+                            <div class="footer__creator">
+                                <a href="http://domenart-studio.ru" target="_blank">
+                                    Разработска сайта<br>
+                                    <img src="img/creator.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -654,6 +706,7 @@
 
         <script src="uikit/js/uikit.min.js"></script>
         <script src="js/vendor/jquery.bxslider.min.js"></script>
+        <script src="js/vendor/slideout.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>

@@ -64,3 +64,18 @@ $(window).load(function() {
         $( window ).on( 'resize', setHeights );
     })( jQuery, window, document );
 });
+
+/* слайд меню */
+var slideout = new Slideout({
+    'panel': document.getElementById('slideout-panel'),
+    'menu': document.getElementById('slideout-menu'),
+    'padding': 280,
+    'tolerance': 100
+});
+$('.js-slideout-toggle').click(function() {
+    slideout.toggle();
+});
+
+$('.js-left-menu-toggle').click(function() {
+    $(this).nextAll('ul').slideToggle(300);
+});
