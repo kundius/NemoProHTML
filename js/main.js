@@ -79,3 +79,5 @@ $('.js-slideout-toggle').click(function() {
 $('.js-left-menu-toggle').click(function() {
     $(this).nextAll('ul').slideToggle(300);
 });
+
+$.ionTabs("#products-tabs");
