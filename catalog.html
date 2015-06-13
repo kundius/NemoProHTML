@@ -62,7 +62,7 @@
         <div class="toolbar">
             <div class="uk-container uk-container-center">
                 <div class="toolbar-auth uk-float-left">
-                    <a class="toolbar-auth__login" href="#">
+                    <a class="toolbar-auth__login uk-button button-blue-round" href="#">
                         <img src="img/icon-arr.png" alt="">
                         Войти
                     </a>
@@ -86,7 +86,7 @@
                             <button type="submit" class="toolbar-search__btn"></button>
                         </form>
                     </div>
-                    <a href="#" class="toolbar-search__link"><img src="img/icon-search-white.png" alt="">Поиск</a>
+                    <a href="#" class="toolbar-search__link uk-button button-blue-round"><img src="img/icon-search-white.png" alt="">Поиск</a>
                 </div>
             </div>
         </div>
@@ -144,7 +144,7 @@
         <div class="uk-container uk-container-center">
             <div class="content">
                 <div class="uk-grid uk-grid-small">
-                    <div class="uk-width-1-4">
+                    <div class="uk-width-medium-1-4 uk-hidden-small">
                         <div class="left-menu">
                             <ul>
                                 <li class="left-menu__lvl1">
@@ -192,7 +192,7 @@
                         <div class="side-text-block">
                             <div class="side-text-block__title">Способ оплаты</div>
                             <div class="side-text-block__desc">Наличный и безналичный расчет</div>
-                            <div class="inline-payments">
+                            <div class="inline-payments _center">
                                 <img src="img/payments/1.png" alt="">
                                 <img src="img/payments/2.png" alt="">
                                 <img src="img/payments/3.png" alt="">
@@ -207,7 +207,7 @@
                             <div class="inline-feedback">
                                 <form action="#" method="post">
                                     <input type="text" name="query" placeholder="Введите ваш e-mail">
-                                    <button type="submit" class="button-blue-round"><img src="img/icon-arr.png" alt=""></button>
+                                    <button type="submit" class="uk-button button-blue-round"><img src="img/icon-arr.png" alt=""></button>
                                 </form>
                             </div>
                         </div>
@@ -216,9 +216,254 @@
                             <img src="img/action-left.jpg" alt="">
                         </div>
                     </div>
-                    <div class="uk-width-3-4">
+                    <div class="uk-width-medium-3-4">
+                        <div class="actions-slider">
+                            <div class="actions-slide _first">
+                                <div class="actions-slide__text">
+                                    <img src="img/actions-slide-1-text-small.png" alt="" class="_small">
+                                    <img src="img/actions-slide-1-text-large.png" alt="" class="_large">
+                                </div>
+                                <div class="actions-slide__more">
+                                    <a class="uk-button button-orange" href="#">ПОДРОБНЕЕ <i class="uk-icon-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
                         <h1>Каталог</h1>
 
+                        <div class="block-introtext">
+                            Коротенький текстовый блок с описанием категории, для чего нужна продукция этой категории, достоинства и недостатки.  Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        </div>
+
+                        <div class="ionTabs" id="products-tabs" data-name="products-tabs">
+                            <div class="products-tabs__head">
+                                <div class="products-tabs-title">
+                                    Интересные предложения:
+                                </div>
+                                <div class="products-tabs-switcher">
+                                    <ul class="ionTabs__head">
+                                        <li class="ionTabs__tab" data-target="products-tab-all">
+                                            <span><u>Все</u></span>
+                                        </li>
+                                        <li class="ionTabs__tab" data-target="products-tab-new">
+                                            <span><u>Новинки</u></span>
+                                        </li>
+                                        <li class="ionTabs__tab" data-target="products-tab-hits">
+                                            <span><u>Хиты</u></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ionTabs__body">
+                                <div class="ionTabs__item" data-name="products-tab-all">
+                                    <div class="products-sorting">
+                                        <div class="uk-grid uk-grid-small">
+                                            <div class="uk-width-small-1-5">
+                                                Сортировать по:
+                                            </div>
+                                            <div class="uk-width-medium-4-5 uk-width-large-2-5">
+                                                цене:&emsp;<a href="#">по&nbsp;убыванию</a>&emsp;<a href="#">по&nbsp;возрастанию</a>
+                                            </div>
+                                            <div class="uk-width-medium-1-5 uk-visible-medium"></div>
+                                            <div class="uk-width-medium-4-5 uk-width-large-2-5">
+                                                названию:&emsp;<a href="#">по&nbsp;убыванию</a>&emsp;<a href="#">по&nbsp;возрастанию</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products-list">
+                                        <div class="uk-grid uk-grid-small">
+                                            <div class="products-cell uk-width-small-1-2 uk-width-large-1-3">
+                                                <div class="product">
+                                                    <div class="product__mark _new"><span>NEW</span></div>
+                                                    <a class="product__image" href="#">
+                                                        <img src="img/offer-1.png" alt="">
+                                                    </a>
+                                                    <div class="product__info">
+                                                        <a href="#" class="product__name">C4 Skorpio Marathon</a>
+                                                        <div class="product__vendor">
+                                                            Производители 	C4
+                                                        </div>
+                                                        <div class="product__price">
+                                                            123 546 руб.
+                                                        </div>
+                                                        <button type="submit" class="product__add uk-button uk-button-large button-blue">
+                                                            <img src="img/icon-cart-h.png" alt="">
+                                                            Купить
+                                                        </button>
+                                                        <a href="#" class="product__more">Подробнее ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="products-cell uk-width-small-1-2 uk-width-large-1-3">
+                                                <div class="product">
+                                                    <a class="product__image" href="#">
+                                                        <img src="img/offer-1.png" alt="">
+                                                    </a>
+                                                    <div class="product__info">
+                                                        <a href="#" class="product__name">C4 Skorpio Marathon</a>
+                                                        <div class="product__vendor">
+                                                            Производители 	C4
+                                                        </div>
+                                                        <div class="product__price">
+                                                            123 546 руб.
+                                                        </div>
+                                                        <button type="submit" class="product__add uk-button uk-button-large button-blue">
+                                                            <img src="img/icon-cart-h.png" alt="">
+                                                            Купить
+                                                        </button>
+                                                        <a href="#" class="product__more">Подробнее ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="products-cell uk-width-small-1-2 uk-width-large-1-3">
+                                                <div class="product">
+                                                    <a class="product__image" href="#">
+                                                        <img src="img/offer-1.png" alt="">
+                                                    </a>
+                                                    <div class="product__info">
+                                                        <a href="#" class="product__name">C4 Skorpio Marathon</a>
+                                                        <div class="product__vendor">
+                                                            Производители 	C4
+                                                        </div>
+                                                        <div class="product__price">
+                                                            123 546 руб.
+                                                        </div>
+                                                        <button type="submit" class="product__add uk-button uk-button-large button-blue">
+                                                            <img src="img/icon-cart-h.png" alt="">
+                                                            Купить
+                                                        </button>
+                                                        <a href="#" class="product__more">Подробнее ></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ionTabs__item" data-name="products-tab-new">
+                                    Контент вкладки 2
+                                </div>
+                                <div class="ionTabs__item" data-name="products-tab-hits">
+                                    Контент вкладки 3
+                                </div>
+
+                                <div class="ionTabs__preloader"></div>
+                            </div>
+                        </div>
+
+                        <div class="block-content">
+                            <h2>Сео-текст (h2)</h2>
+                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. “Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах”, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                            <h2>Почему он используется? (h2)</h2>
+                            <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+                            <h3>Откуда он появился? (h3)</h3>
+                            <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</p>
+                        </div>
+
+                        <div class="categories js-equal-list">
+                            <div class="uk-grid uk-grid-small">
+                                <div class="uk-width-small-1-2 uk-width-large-1-3">
+                                    <div class="category js-equal-item">
+                                        <div class="category__image">
+                                            <img src="img/offer-1.png" alt="">
+                                        </div>
+                                        <div class="category__name">
+                                            <span>Название подраздела категории</span>
+                                        </div>
+                                        <div class="category__info">
+                                            <div class="category__name">
+                                                <a href="#">Название подраздела категории</a>
+                                            </div>
+                                            <div class="category__desc">
+                                                Краткое описание подраздела каталога, его достиинства и тд. Краткое описание подраздела каталога, его достоинства и тд...
+                                            </div>
+                                            <div class="category__more"><a href="#" class="uk-button button-yellow-arr">ПОДРОБНЕЕ <i class="uk-icon-angle-right"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-small-1-2 uk-width-large-1-3">
+                                    <div class="category js-equal-item">
+                                        <div class="category__image">
+                                            <a href="#"><img src="img/offer-1.png" alt=""></a>
+                                        </div>
+                                        <div class="category__name">
+                                            <a href="#">Название подраздела категории</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-small-1-2 uk-width-large-1-3">
+                                    <div class="category js-equal-item">
+                                        <div class="category__image">
+                                            <a href="#"><img src="img/offer-1.png" alt=""></a>
+                                        </div>
+                                        <div class="category__name">
+                                            <a href="#">Название подраздела категории</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-small-1-2 uk-width-large-1-3">
+                                    <div class="category js-equal-item">
+                                        <div class="category__image">
+                                            <a href="#"><img src="img/offer-1.png" alt=""></a>
+                                        </div>
+                                        <div class="category__name">
+                                            <a href="#">Название подраздела категории</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-small-1-2 uk-width-large-1-3">
+                                    <div class="category js-equal-item">
+                                        <div class="category__image">
+                                            <a href="#"><img src="img/offer-1.png" alt=""></a>
+                                        </div>
+                                        <div class="category__name">
+                                            <a href="#">Название подраздела категории</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-small-1-2 uk-width-large-1-3">
+                                    <div class="category js-equal-item">
+                                        <div class="category__image">
+                                            <a href="#"><img src="img/offer-1.png" alt=""></a>
+                                        </div>
+                                        <div class="category__name">
+                                            <a href="#">Название подраздела категории</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-content">
+                            <h2>Сео-текст (h2)</h2>
+                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. “Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах”, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                            <h2>Почему он используется? (h2)</h2>
+                            <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+                            <h3>Откуда он появился? (h3)</h3>
+                            <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-text-block uk-visible-small">
+                    <div class="side-text-block__title">Способ оплаты</div>
+                    <div class="side-text-block__desc">Наличный и безналичный расчет</div>
+                    <div class="inline-payments">
+                        <img src="img/payments/1.png" alt="">
+                        <img src="img/payments/2.png" alt="">
+                        <img src="img/payments/3.png" alt="">
+                        <img src="img/payments/4.png" alt="">
+                        <img src="img/payments/5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="side-text-block uk-visible-small">
+                    <div class="side-text-block__title">Обратная связь</div>
+                    <div class="side-text-block__desc">Необходима консультация?<br> Наши менеджеры оперативно ответят вам.</div>
+                    <div class="inline-feedback">
+                        <form action="#" method="post">
+                            <input type="text" name="query" placeholder="Введите ваш e-mail">
+                            <button type="submit" class="uk-button button-blue-round"><img src="img/icon-arr.png" alt=""></button>
+                        </form>
                     </div>
                 </div>
             </div>
