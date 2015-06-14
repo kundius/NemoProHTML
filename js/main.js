@@ -31,6 +31,16 @@ $('.js-about-slider').bxSlider({
     controls: false
 });
 
+$('.js-product-gallery').bxSlider({
+    pager: false,
+    minSlides: 3,
+    maxSlides: 10,
+    slideWidth: 85,
+    slideMargin: 5,
+    prevText: '<i class="uk-icon-chevron-left"></i>',
+    nextText: '<i class="uk-icon-chevron-right"></i>'
+});
+
 
 /** Выравнивание высоты блоков **/
 $(window).load(function() {
@@ -81,3 +91,16 @@ $('.js-left-menu-toggle').click(function() {
 });
 
 $.ionTabs("#products-tabs");
+
+$('.js-input-number-up').click(function() {
+    var input = $(this).prevAll('input');
+    var val = Number(input.val())+1;
+    input.val(val);
+});
+$('.js-input-number-down').click(function() {
+    var input = $(this).prevAll('input');
+    var val = Number(input.val())-1;
+    if(val >= input.attr('min')) {
+        input.val(val);
+    }
+});
